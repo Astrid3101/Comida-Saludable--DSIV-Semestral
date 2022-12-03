@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body onload="login()">
+    <section id="principio">
+        <nav>
+            <div class="logo">
+                <img src="image/logo.png">
+            </div>
+
+            <ul>
+                <li><a href="index.html">Volver a Página Princial </a></li>
+                <li><a href="Registro.html">Registrarse </a></li>
+                <li><a href="Perfil.html"> Perfil </a><li>
+            </ul>
+
+        
+        </nav>
+    </section>
+
+    <div class="loggin" id="Loggin">
+        <h1><span>Iniciar</span>Sesión</h1>
+
+        <div class="loggin_principal">
+
+            <div class="loggin_image">
+                <img src="image/vegetales.png">
+            </div>
+
+            <form id="formulario" action="C:\Users\Astri\OneDrive\Documentos\GitHub\PaginaOficial\index.html" method="post" onsubmit="return login()">
+
+                <div class="input">
+                    <p>Correo</p>
+                    <input id="mail" type="email" placeholder="Email@gmail.com">
+                </div>
+
+                <div class="input">
+                    <p>Contraseña</p>
+                    <input id="contra" placeholder="*******">
+                </div>
+
+                <input type="submit" class="loggin_btn" value="Ingresar"/>
+                <a href="Registro.html" class="loggin_btn">Registrarse</a>
+            </form>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>   
+</html>

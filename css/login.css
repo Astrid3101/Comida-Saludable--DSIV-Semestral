@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: sans-serif;
+}
+
+section{
+    width: 100%;
+    height: 10vh;
+}
+
+section nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    text-align: right;
+    right: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1000;
+    
+}
+
+section nav .logo img{
+    width: 100px;
+    
+    margin: 7px 0;
+}
+
+section nav ul{
+    list-style: none;
+}
+
+section nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+section nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 17px;
+    transition: 0.1s;
+}
+
+section nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background:green;
+    display: block;
+    transition: 0.2s linear;
+}
+
+section nav ul li a:hover::after{
+    width: 100%;
+}
+
+section nav ul li a:hover{
+    color:green;
+}
+
+
+.loggin{
+    
+    width: 100%;
+    height: 100px;
+    padding: 50px 0;
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    
+    
+}
+
+.loggin h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 55px;
+}
+
+.loggin h1 span{
+    color: #9BA747;
+    margin-right: 15px;
+    font-family: mv boli;
+}
+
+.loggin h1 span::after{
+    width: 50%;
+    height: 2px;
+    background: #9BA747;
+    display: flex;
+    position: relative;
+    bottom: 15px;
+}
+
+.loggin .loggin_principal{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.loggin .loggin_principal .loggin_image img{
+    width: 500px;
+    
+}
+
+.loggin .loggin_principal form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 10px;
+}
+
+.loggin .loggin_principal form .input p{
+    line-height: 25px;
+}
+
+.loggin .loggin_principal form .input{
+    margin: 5px;
+}
+
+.loggin .loggin_principal form .input input{
+    width: 300px;
+    height: 35px;
+    padding: 0 10px;
+    border: 2px solid #cccccc;
+    background: #eeeeee;
+    outline: none;
+    border-radius: 3px;
+}
+
+.loggin .loggin_principal form .input input:focus{
+    border: 2px solid #9BA747;
+}
+
+.loggin .loggin_principal form .loggin_btn{
+    padding: 10px 0;
+    background: #9BA747;
+    color: white;
+    width: 40%;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+
